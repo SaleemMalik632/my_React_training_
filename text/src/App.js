@@ -29,9 +29,8 @@ function App() {
           <Footer/>
           <MyButton/>  
         <Style /> 
-        <Props name = "saleem" age = "Malik" />
-        <Props name = "saleem" age = "Malik" /> 
-      </header>
+        <Props name = "saleem" age = "Malik"  number  = {30}/>  
+      </header> 
 
     </div>     
   );

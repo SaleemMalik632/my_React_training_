@@ -1,6 +1,6 @@
-const Footer = () => {
+const Footer = ({name}) => {
   return (
-    <div>Footer from the component file </div>
+    <div>{name}</div> 
   ) 
 }
 
