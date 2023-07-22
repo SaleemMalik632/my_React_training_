@@ -4,17 +4,17 @@ import   Footer  from "./Header";
 
 
 function MyButton() {
-  const [count, setCount] = useState(10);
+  const [count, setCount] = useState(10);  
   function fun(){
     setCount(count + 1);
   }
   return (
     <button  onClick={fun}> 
-      {count} time on it 
+      {count} time on it  
     </button>
   );
 } 
-function App() {
+function App() { 
   return (
     <div className="App">
       <header className="App-header">
@@ -27,9 +27,5 @@ function App() {
     </div>     
   );
 }
-
-
-
-
 
 export default App;
