@@ -1,29 +1,38 @@
 import "./App.css";
 import { useState } from "react";
-import   Footer  from "./Header";
+import   Footer  from './Component/Footer'
+import   Header  from './Component/Header' ;
+import  Style  from './Component/StyleCompoment'
+import Props  from "./Component/Props";
 
 
 function MyButton() {
   const [count, setCount] = useState(10);  
-  function fun(){
+  function fun(){ 
     setCount(count + 1);
   }
   return (
     <button  onClick={fun}> 
-      {count} time on it  
+      {count} time on it 
     </button>
   );
 } 
-function App() { 
+
+
+
+function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <p>Edit src App.js and save to reload.</p>
-         {/* <Header></Header>  */} 
-         <Footer></Footer>
-        <MyButton></MyButton>
-        <a href=  "https://reactjs.org" className="mail" target="_blank" rel="noopener noreferrer" > Learn how to sex  </a>
+        <h5>Below Me All the Components </h5>
+          <Header/> 
+          <Footer/>
+          <MyButton/>  
+        <Style /> 
+        <Props name = "saleem" age = "Malik" />
+        <Props name = "saleem" age = "Malik" /> 
       </header>
+
     </div>     
   );
 }
