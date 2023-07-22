@@ -8,7 +8,7 @@ const EcommercePage = () => {
       id: 1,
       name: 'Product 1',
       category: 'Category 1',
-      image: 'product1.jpg',
+      image: 'https://fakestoreapi.com/icons/intro.svg',
       liked: false,
     },
     {
@@ -17,36 +17,89 @@ const EcommercePage = () => {
       category: 'Category 2',
       image: 'https://fakestoreapi.com/icons/intro.svg',
       liked: true,
-    },
-    // Add more products here
-  ];
+    } 
+    ,
+    {
+        id: 2,
+        name: 'Product 2',
+        category: 'Category 2',
+        image: 'https://fakestoreapi.com/icons/intro.svg',
+        liked: true,
+      } 
+      ,
+      {
+        id: 2,
+        name: 'Product 2',
+        category: 'Category 2',
+        image: 'https://fakestoreapi.com/icons/intro.svg',
+        liked: true,
+      } 
+      ,
+      {
+        id: 2,
+        name: 'Product 2',
+        category: 'Category 2',
+        image: 'https://fakestoreapi.com/icons/intro.svg',
+        liked: true,
+      } 
+      ,
+      {
+        id: 2,
+        name: 'Product 2',
+        category: 'Category 2',
+        image: 'https://fakestoreapi.com/icons/intro.svg',
+        liked: true,
+      } 
+      ,
+      {
+        id: 2,
+        name: 'Product 2',
+        category: 'Category 2',
+        image: 'https://fakestoreapi.com/icons/intro.svg',
+        liked: true,
+      } 
+      ,
+      {
+        id: 2,
+        name: 'Product 2',
+        category: 'Category 2',
+        image: 'https://fakestoreapi.com/icons/intro.svg',
+        liked: true,
+      } 
+      ,
+      
 
-  const handleAddToCart = (product) => {
+
+      
+      
+  ]; 
+
+  const handleAddToCart = () => {
     // Implement your logic to add the product to the cart
-    console.log('Adding to cart:', product);
+     alert('Add To card is Done ');
   };
 
-  const handleBuyNow = (product) => {
+  const handleBuyNow = () => {
     // Implement your logic for the "Buy Now" button
-    console.log('Buy Now:', product);
+    alert('BUY  To card is Done ');
   };
 
-  const handleLike = (product) => {
+  const handleLike = () => {
     // Implement your logic to toggle the "liked" status for the product
-    console.log('Toggle Like:', product);
+     alert('this is Log Like ')
   };
 
   return (
-    <div>
-      {products.map((product) => (
-        <ProductCard
-          key={product.id}
-          product={product}
-          onAddToCart={handleAddToCart}
-          onBuyNow={handleBuyNow}
-          onLike={handleLike}
-        />
-      ))}
+    <div  style={{ 
+        display: 'grid',
+        gridTemplateColumns: 'repeat(4, 1fr)', // Four equally sized columns
+        gap: '20px', // Gap between grid items (optional)
+        justifyContent: 'center', // Center the grid items horizontally
+        alignItems: 'center', // Center the grid items vertically
+        maxWidth: '1200px', // Optionally limit the container width
+        margin: '0 auto', // Center the container on the page
+      }} >   
+      {products.map((product) => (   <ProductCard  product= {product}  onAddToCart= {handleAddToCart} onBuyNow= {handleBuyNow} onLike= {handleLike}  /> ))}
     </div>
   );
 };

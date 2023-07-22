@@ -12,6 +12,9 @@
      padding: 10px;
      margin: 10px;
      width: 250px;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-around;
    }
    
    .product-image {
