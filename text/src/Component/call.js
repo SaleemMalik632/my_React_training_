@@ -88,6 +88,12 @@ const EcommercePage = () => {
     // Implement your logic to toggle the "liked" status for the product
      alert('this is Log Like ')
   };
+  
+   const Shear = (product) => {
+    alert('The Name of the product is ' + product.name);
+  }
+  
+
 
   return (
     <div  style={{ 
@@ -99,7 +105,7 @@ const EcommercePage = () => {
         maxWidth: '1200px', // Optionally limit the container width
         margin: '0 auto', // Center the container on the page
       }} >   
-      {products.map((product) => (   <ProductCard  product= {product}  onAddToCart= {handleAddToCart} onBuyNow= {handleBuyNow} onLike= {handleLike}  /> ))}
+      {products.map((product) => (   <ProductCard  product= {product}  onAddToCart= {handleAddToCart} onBuyNow= {handleBuyNow} onLike= {handleLike}  Shear = {Shear}  /> ))}
     </div>
   );
 };

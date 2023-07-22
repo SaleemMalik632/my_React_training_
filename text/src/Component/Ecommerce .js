@@ -1,7 +1,7 @@
 import React from 'react';
 import  "./MyStyle.css";
 
-const ProductCard = ({ product, onAddToCart, onBuyNow, onLike  }) => {
+const ProductCard = ({ product, onAddToCart, onBuyNow, onLike  , Shear }) => {
   const { name, category, image, liked } = product;
 
   return (
@@ -22,11 +22,10 @@ const ProductCard = ({ product, onAddToCart, onBuyNow, onLike  }) => {
         >
           {liked ? 'Liked' : 'Like'} 
         </button>
-
-        <button>Shear Now </button>
+        <button  onClick={()=> Shear(product)}  >  Shear Now  </button>
       </div>
     </div>
-  );
+  ); 
 };
 
 export default ProductCard;
