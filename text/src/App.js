@@ -4,6 +4,7 @@ import   Footer  from './Component/Footer'
 import   Header  from './Component/Header' ;
 import  Style  from './Component/StyleCompoment'
 import Props  from "./Component/Props";
+import EcommercePage  from  './Component/call';
 
 
 function MyButton() {
@@ -29,7 +30,8 @@ function App() {
           <Footer/>
           <MyButton/>  
         <Style /> 
-        <Props name = "saleem" age = "Malik"  number  = {30}/>  
+        <EcommercePage />
+        <Props name = "saleem" age = "nnnlik"  number = {0}/>    
       </header> 
 
     </div>     
