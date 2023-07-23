@@ -1,4 +1,4 @@
-import "./App.css";
+import "./Component/App1.css";
 import { useState } from "react";
 import Footer from "./Component/Footer";
 import Header from "./Component/Header";
@@ -7,6 +7,9 @@ import Props from "./Component/Props";
 import EcommercePage from "./Component/call";
 import ShowMore_ from "./Component/More";
 import Send from "./Component/Sendmassage";
+import MatrilUI from "./Component/MatrialUI";
+import RecipeReviewCard from './Component/Showcard';
+
 
 function MyButton() {
   const [count, setCount] = useState(0);
@@ -33,10 +36,17 @@ function App() {
         <Header />
         <Footer />
         <MyButton />
-        <Style />
+        <Style />           
         <EcommercePage />
         <ShowMore_ /> 
-        <Send />
+        <Send /> 
+        <MatrilUI/> 
+        <div className="maincard">
+        <RecipeReviewCard /> 
+        <RecipeReviewCard /> 
+        <RecipeReviewCard /> 
+        <RecipeReviewCard /> 
+        </div>
         <Props name="saleem" age="nnnlik" number={0} />
       </header>
     </div>

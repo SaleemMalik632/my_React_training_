@@ -1,17 +1,19 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
+
+.App-logo { 
   height: 40vmin;
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.maincard{
+ display: flex;
+ justify-content: space-around;
 }
+.CardName{
+  margin:10px ;
+}
+
+
 
 .App-header {
   background-color: #282c34;
@@ -36,3 +38,4 @@
     transform: rotate(360deg);
   }
 }
+ 
