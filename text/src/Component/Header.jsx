@@ -1,8 +1,7 @@
 const Header = () => {
   return (
     <h1>
-      hellow this is my first page commponent this is the pakistran of my{" "}
-    </h1>
+      Hello I am header    </h1>
   );
 };
 

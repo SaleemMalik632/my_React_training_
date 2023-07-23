@@ -10,8 +10,7 @@ import Send from "./Component/Sendmassage";
 import MatrilUI from "./Component/MatrialUI";
 import RecipeReviewCard from "./Component/Showcard";
 import Ueseffect from "./Component/Ueseffect";
-import Reactrout from "./Component/Reactrout";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Reactrout from "./Component/Reactrout";  // this file comtain the comlete code for the react router dom 
 
 function MyButton() {
   const [count, setCount] = useState(0);
@@ -35,9 +34,8 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h5>Below Me All the Components </h5>
-        <Reactrout />
-        {/* <Header /> */}
-        {/* <Footer /> */}
+        <Header />
+        <Footer />
         <MyButton />
         <Style />
         <EcommercePage />
@@ -49,15 +47,8 @@ function App() {
           <RecipeReviewCard />
           <RecipeReviewCard />
           <RecipeReviewCard />
-        </div>
+        </div> 
 
-        <BrowserRouter>
-          <Routes>
-            <Route path="/" element={<RecipeReviewCard />} />
-            <Route path="/about" element={<Header />} />
-            <Route path="/contact" element={<Footer />} />
-          </Routes>
-        </BrowserRouter>
         
       </header>
     </div>
