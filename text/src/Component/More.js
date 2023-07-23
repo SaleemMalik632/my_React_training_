@@ -16,16 +16,16 @@ function Gallery() {
 
   function handleMoreClick() {
     setShowMore(!showMore);
-  }
+  } 
 
   let one = Array[count]; 
   return (
     <>
-      <button onClick={handleNextClick}>Next</button>
+      <button onClick={handleNextClick}>Next</button> 
       <h2> <i>{one.name} </i>by {one.artist}  </h2>
-      <h3>   ({count + 1} of {Array.length})  </h3> 
+      <h3>   ({count + 1} of {Array.length})  </h3>  
       <button onClick={handleMoreClick}>{showMore ? "Hide" : "Show"} details</button>
-      {showMore && <p>{one.description}</p>}
+      {showMore && <p>{one.description}</p>} 
       <img src={one.url} alt={one.alt} /> 
     </>
   );
