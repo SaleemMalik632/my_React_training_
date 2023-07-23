@@ -9,7 +9,7 @@ import ShowMore_ from "./Component/More";
 import Send from "./Component/Sendmassage";
 import MatrilUI from "./Component/MatrialUI";
 import RecipeReviewCard from './Component/Showcard';
-
+import Ueseffect from "./Component/Ueseffect";
 
 function MyButton() {
   const [count, setCount] = useState(0);
@@ -38,7 +38,7 @@ function App() {
         <MyButton />
         <Style />           
         <EcommercePage />
-        <ShowMore_ /> 
+        <ShowMore_  /> 
         <Send /> 
         <MatrilUI/> 
         <div className="maincard">
@@ -47,6 +47,7 @@ function App() {
         <RecipeReviewCard /> 
         <RecipeReviewCard /> 
         </div>
+        <Ueseffect/>
         <Props name="saleem" age="nnnlik" number={0} />
       </header>
     </div>
