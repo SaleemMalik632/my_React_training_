@@ -22,7 +22,9 @@ import { BrowserRouter as Router,Routes, Route, Link } from 'react-router-dom';
 <Routes>
       <Route exact path='/' element={ < EcommercePage/>}></Route>
       <Route exact path='/about' element={< RecipeReviewCard />}></Route> 
-      <Route exact path='/contact' element={<  Header  />}></Route>
-</Routes>
+      <Route exact path='/contact' element={<  Header  />}></Route> 
+      <Route exact path='*' element= {'page Not Found '}></Route>    {/* we can also add an other componet here and than show tham that page is not found  */}
+    
+</Routes> 
 </div>
 </Router> 
