@@ -13,5 +13,5 @@ const footer = () =>{
 }
 
 export  {Header};  // if you want to expoert by defualt 
-export  default footer // for more than one  
+export  default Header // for more than one  
 // export { footer} 

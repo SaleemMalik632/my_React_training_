@@ -1,6 +1,6 @@
-const Footer = ({name}) => {
+const Footer = () => {
   return (
-    <div>{name}</div> 
+     <h1>This is Footer page Of Website </h1> 
   ) 
 }
 

@@ -8,8 +8,10 @@ import EcommercePage from "./Component/call";
 import ShowMore_ from "./Component/More";
 import Send from "./Component/Sendmassage";
 import MatrilUI from "./Component/MatrialUI";
-import RecipeReviewCard from './Component/Showcard';
+import RecipeReviewCard from "./Component/Showcard";
 import Ueseffect from "./Component/Ueseffect";
+import Reactrout from "./Component/Reactrout";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function MyButton() {
   const [count, setCount] = useState(0);
@@ -33,22 +35,30 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h5>Below Me All the Components </h5>
-        <Header />
-        <Footer />
+        <Reactrout />
+        {/* <Header /> */}
+        {/* <Footer /> */}
         <MyButton />
-        <Style />           
+        <Style />
         <EcommercePage />
-        <ShowMore_  /> 
-        <Send /> 
-        <MatrilUI/> 
+        <ShowMore_ />
+        <Send />
+        <MatrilUI />
         <div className="maincard">
-        <RecipeReviewCard /> 
-        <RecipeReviewCard /> 
-        <RecipeReviewCard /> 
-        <RecipeReviewCard /> 
+          <RecipeReviewCard />
+          <RecipeReviewCard />
+          <RecipeReviewCard />
+          <RecipeReviewCard />
         </div>
-        <Ueseffect/>
-        <Props name="saleem" age="nnnlik" number={0} />
+
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<RecipeReviewCard />} />
+            <Route path="/about" element={<Header />} />
+            <Route path="/contact" element={<Footer />} />
+          </Routes>
+        </BrowserRouter>
+        
       </header>
     </div>
   );

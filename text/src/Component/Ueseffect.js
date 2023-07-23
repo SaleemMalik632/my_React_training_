@@ -40,7 +40,7 @@ const UseEffectComponent = () => {
           <p>Email: {user.email}</p>
           <p>Phone: {user.phone}</p>
           <p>Username: {user.username}</p>
-        </div>
+        </div> 
         
       ))}
     </div>
