@@ -3,19 +3,20 @@ import ProductCard from './Ecommerce '; // Make sure to adjust the import path a
 
 const EcommercePage = () => {
   // Sample product data, replace it with your actual product data
+  // 'https://fakestoreapi.com/icons/intro.svg'
   const products = [
     {
       id: 1,
       name: 'Product 1',
       category: 'Category 1',
-      image: 'https://fakestoreapi.com/icons/intro.svg',
+      image: 'https://i.imgur.com/6o5Vuyu.jpg',
       liked: false,
     },
     {
       id: 2,
       name: 'Product 2',
       category: 'Category 2',
-      image: 'https://fakestoreapi.com/icons/intro.svg',
+      image: 'https://i.imgur.com/6o5Vuyu.jpg',
       liked: true,
     } 
     ,
@@ -23,7 +24,7 @@ const EcommercePage = () => {
         id: 2,
         name: 'Product 2',
         category: 'Category 2',
-        image: 'https://fakestoreapi.com/icons/intro.svg',
+        image: 'https://i.imgur.com/6o5Vuyu.jpg',
         liked: true,
       } 
       ,
@@ -31,7 +32,7 @@ const EcommercePage = () => {
         id: 2,
         name: 'Product 2',
         category: 'Category 2',
-        image: 'https://fakestoreapi.com/icons/intro.svg',
+        image: 'https://i.imgur.com/6o5Vuyu.jpg',
         liked: true,
       } 
       ,
@@ -39,7 +40,7 @@ const EcommercePage = () => {
         id: 2,
         name: 'Product 2',
         category: 'Category 2',
-        image: 'https://fakestoreapi.com/icons/intro.svg',
+        image: 'https://i.imgur.com/6o5Vuyu.jpg',
         liked: true,
       } 
       ,
@@ -47,7 +48,7 @@ const EcommercePage = () => {
         id: 2,
         name: 'Product 2',
         category: 'Category 2',
-        image: 'https://fakestoreapi.com/icons/intro.svg',
+        image: 'https://i.imgur.com/6o5Vuyu.jpg',
         liked: true,
       } 
       ,
@@ -55,7 +56,7 @@ const EcommercePage = () => {
         id: 2,
         name: 'Product 2',
         category: 'Category 2',
-        image: 'https://fakestoreapi.com/icons/intro.svg',
+        image: 'https://i.imgur.com/6o5Vuyu.jpg',
         liked: true,
       } 
       ,
@@ -63,7 +64,7 @@ const EcommercePage = () => {
         id: 2,
         name: 'Product 2',
         category: 'Category 2',
-        image: 'https://fakestoreapi.com/icons/intro.svg',
+        image: 'https://i.imgur.com/6o5Vuyu.jpg',
         liked: true,
       } 
       ,

@@ -1,57 +1,40 @@
 import "./Component/App1.css";
-import { useState } from "react";
-import Footer from "./Component/Footer";
 import Header from "./Component/Header";
-import Style from "./Component/StyleCompoment";
-import Props from "./Component/Props";
 import EcommercePage from "./Component/call";
-import ShowMore_ from "./Component/More";
-import Send from "./Component/Sendmassage";
-import MatrilUI from "./Component/MatrialUI";
 import RecipeReviewCard from "./Component/Showcard";
-import Ueseffect from "./Component/Ueseffect";
-import Reactrout from "./Component/Reactrout";  // this file comtain the comlete code for the react router dom 
-import AirportShuttleIcon from '@mui/icons-material/AirportShuttle';
-function MyButton() {
-  const [count, setCount] = useState(0);
-  function fun() {
-    setCount(count + 1); //code is ready 
-  }
-  function dec() {
-    setCount(count - 1);
-  }
-  return (
-    <div>
-      <p>{count}</p>
-      <button onClick={fun}> Add </button>
-      <button onClick={dec}> Decrease </button>
-    </div>
-  );
-}
+import Sami from "./Component/Sami"; 
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import Nav  from "./Component/nav";
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <h5>Below Me All the Components </h5>
-        <Header />
-        <Footer />
-        <MyButton />
-        <Style />
-        <EcommercePage />
-        <ShowMore_ />
-        <Send />
-        <MatrilUI />
-        <div className="maincard">
-          <RecipeReviewCard />
-          <RecipeReviewCard />
-          <RecipeReviewCard />
-          <RecipeReviewCard />
-        </div> 
-        <AirportShuttleIcon />
-
-        
-      </header>
+  return ( 
+    <div className=""> 
+      <Router>
+        <div className="">
+          <ul className=""> 
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/about">Sami</Link>
+            </li>
+            <li>
+              <Link to="/contact">Contact Us</Link>
+            </li>
+            <li>
+              <Link to="/showmore">ShowMore</Link> 
+            </li>
+          </ul> 
+          <Routes>
+            <Route exact path='/' element={< Nav />} > </Route> 
+            <Route exact path='/about' element={< Sami />}></Route> 
+            <Route exact path='/contact' element={<  Header />}></Route>
+            <Route exact path='*' element={'page Not Found '}></Route>  
+            <Route exact path='/showmore' element={< RecipeReviewCard/>}></Route> 
+          </Routes>
+        </div>
+      </Router>
     </div>
   );
 }
