@@ -7,7 +7,7 @@ const Props = (props) => {
       <div>{props.name}</div>
       <div> {props.age } , { props.number}</div>
        <Footer name = {props.name}/>  
-    </div>  
+    </div>   
   );
 };
 
