@@ -3,6 +3,7 @@ import { useState, useRef } from 'react';
 import ComB from './ComB';
 import { MyContext } from '../App'
 
+
 const ComA = () => {
 
     const [input, setinput] = useState("");

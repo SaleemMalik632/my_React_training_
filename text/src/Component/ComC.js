@@ -1,6 +1,6 @@
 import React from 'react'
 import Custom from './Custom';
-import { ThreeCircles  , ThreeDots} from 'react-loader-spinner'
+import { ThreeCircles, ThreeDots, Bars } from 'react-loader-spinner';
 
 const ComC = () => {
 
@@ -8,17 +8,19 @@ const ComC = () => {
     return (
         <>
             <div>ComC</div>
-            {
-                loader ?
-                    <ThreeDots /> : 
-                    data.map((user) => (
-                        <div key={user.id}>
-                            <p>Name: {user.firstName} {user.lastName}</p>
-                        </div>
-                    ))
-            }
+            <div>
+                {
+                    loader ?
+                        <  Bars color='blue' /> :
+                        data.map((user) => (
+                            <div key={user.id}>
+                                <p>Name: {user.firstName} {user.lastName}</p>
+                            </div>
+                        ))
+                }
+            </div>
         </>
-
+ 
     )
 }
 

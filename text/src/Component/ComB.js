@@ -29,7 +29,7 @@ const tylefunction = (state, action) => {
 }
 
 const ComB = () => {
-    const [state, dispatch] = useReducer(tylefunction, 0);
+    const [state, dispatch] = useReducer(tylefunction, null);
 
     return (
         <>

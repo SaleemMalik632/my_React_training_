@@ -1,8 +1,9 @@
 import { useState, useEffect } from 'react';
 
+
  
 
-const Custom = () => {
+const Custom = () => { 
     const [data, setData] = useState([]);
     const [loader, setloader] = useState(false);
  
@@ -11,9 +12,8 @@ const Custom = () => {
         async function getData() {
             const response = await fetch('https://dummyjson.com/users');
             const data = await response.json();
-            setData(data.users);
+            setData(data.users); 
             setloader(false);
-
             } 
         getData();
     }, [])
