@@ -10,7 +10,7 @@ class ClassCom extends React.Component {
     }
     render() {
         return (
-            <>
+            <> 
                 <div>ClassCom {this.props.name}</div>
                 <h1>{this.state.count}</h1>
                 <button onClick={this.inc}>INC</button>
