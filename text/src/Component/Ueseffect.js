@@ -18,31 +18,35 @@ const UseEffectComponent = () => {
       }
     }
     fetchData();
-  }, []); 
+  }, []);
 
   return (
-    <div style={{ 
-        display: 'grid',
-        gridTemplateColumns: 'repeat(4, 1fr)', // Four equally sized columns
-        gap: '20px', // Gap between grid items (optional)
-        justifyContent: 'center', // Center the grid items horizontally
-        alignItems: 'center', // Center the grid items vertically
-        maxWidth: '1200px', // Optionally limit the container width
-        margin: '0 auto', // Center the container on the page
-      }} >
+    <div style={{
+      display: 'grid',
+      gridTemplateColumns: 'repeat(4, 1fr)', // Four equally sized columns
+      gap: '20px', // Gap between grid items (optional)
+      justifyContent: 'center', // Center the grid items horizontally
+      alignItems: 'center', // Center the grid items vertically
+      maxWidth: '1200px', // Optionally limit the container width
+      margin: '0 auto', // Center the container on the page
+    }} >
       <h1>User Data</h1>
-      {data.map((user) => ( 
-       <div  key={user.id}>
-          <img src={user.image} alt="User Avatar" />
-          <p>Name: {user.firstName} {user.lastName}</p>
-          <p>Age: {user.age}</p>
-          <p>Gender: {user.gender}</p>
-          <p>Email: {user.email}</p>
-          <p>Phone: {user.phone}</p>
-          <p>Username: {user.username}</p>
-        </div> 
-        
-      ))}
+      {
+        data.map((user) => (
+
+          <div key={user.id}>
+            <img src={user.image} alt="User Avatar" />
+            <p>Name: {user.firstName} {user.lastName}</p>
+            <p>Age: {user.age}</p>
+            <p>Gender: {user.gender}</p>
+            <p>Email: {user.email}</p>
+            <p>Phone: {user.phone}</p>
+            <p>Username: {user.username}</p>
+          </div>
+
+        ))
+
+      }
     </div>
   );
 };
