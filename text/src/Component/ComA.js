@@ -9,7 +9,7 @@ const ComA = () => {
     const [input, setinput] = useState("");
     const { text1, settext1 } = useContext(MyContext);
     const { text, setname } = useContext(MyContext);
-    const prevstate = useRef('');
+    const prevstate = useRef(''); 
     const label_ = useRef(""); // this is used to diractili manipulate the dom elememt of the page 
 
     // useEffect(() => {
@@ -30,10 +30,12 @@ const ComA = () => {
     return (
         <>
             <div>ComA name and Age is {text.Name + text.age}</div>
-            <h1>{text1}</h1>
+            <h1>{text1}
+            </h1>
             <input ref={prevstate} value={input} onChange={Event_handal} />
             <label ref={label_} >This label</label>
             <button onClick={onClickb} >  Click me  </button>
+
             {/* <p>The Prve state of the dom is {prevstate.current} </p>   */}
             <ComB />
         </>

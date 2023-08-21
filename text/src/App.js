@@ -7,6 +7,7 @@ import Nav from "./Component/nav";
 import ComA from "./Component/ComA";
 import { useState, createContext } from "react";
 import Tostify from "./Component/Tostify";
+import RGrid  from   './Component/Respoinsive-Gride'
 
 
 export const MyContext = createContext("saleem malik ");
@@ -27,9 +28,9 @@ function App() {
           <Nav></Nav>
           <Routes>
             <Route exact path='/' element={< Sami />} > </Route>
-            <Route exact path='/about' element={< Header />}></Route>
+            <Route exact path='/about' element={< RGrid />}></Route>
             <Route exact path='/Blog' element={<  Tostify />}></Route>
-            <Route exact path='/Testing' element={< ComA />}></Route>
+            <Route exact path='/Testing' element={< ComA />}></Route> 
             <Route exact path='*' element={'page Not Found '}></Route>
           </Routes>
         </Router>
