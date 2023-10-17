@@ -21,8 +21,7 @@ function App() {
 
   return (
     
-    <MyContext.Provider value={{ text, text1, settext1  , setname }}>
-      
+    <MyContext.Provider value={{ text, text1, settext1  , setname }} > 
       <div className="">
         <Router>
           <Nav></Nav>
@@ -34,8 +33,7 @@ function App() {
             <Route exact path='*' element={'page Not Found '}></Route>
           </Routes>
         </Router>
-      
-      </div>
+      </div> 
     </MyContext.Provider>
   );
 }

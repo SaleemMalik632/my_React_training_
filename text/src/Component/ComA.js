@@ -22,7 +22,6 @@ const ComA = () => {
         label_.current.style.border = '1px solid red';
         prevstate.current.focus();
         prevstate.current.value = 'value is changes ';
-
     }
     function Event_handal(Event) {
         setinput(Event.target.value);
